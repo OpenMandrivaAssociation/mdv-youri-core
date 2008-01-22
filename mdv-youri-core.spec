@@ -2,7 +2,7 @@
 %define name	mdv-%{rname}
 %define version 0.9
 %define svn	20071219
-%define rel	1
+%define rel	2
 %define release %mkrel 1.%{svn}.%{rel}
 %define distname %{rname}-%{version}-%{svn}
 
@@ -14,6 +14,7 @@ License:	GPL or Artistic
 Group:		Development/Other
 Source:		%{distname}.tar.bz2
 Url:		http://youri.zarb.org
+Requires:	perl-YAML
 BuildRequires:	perl(Test::Distribution)
 BuildRequires:	perl(Pod::Simple::HTMLBatch)
 BuildRequires:	perl(DateTime::Format::Duration)
