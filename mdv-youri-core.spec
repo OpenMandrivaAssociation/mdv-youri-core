@@ -12,6 +12,7 @@ Release:	%{release}
 Summary:	Youri Offers an Upload & Repository Infrastucture (Mandriva fork)
 License:	GPL or Artistic
 Group:		Development/Other
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Source:		%{distname}.tar.bz2
 Url:		http://youri.zarb.org
 Requires:	perl-YAML
