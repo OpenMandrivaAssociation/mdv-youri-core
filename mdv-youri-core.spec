@@ -1,8 +1,8 @@
 %define rname	youri-core
 %define name	mdv-%{rname}
 %define version 0.9
-%define svn	20071219
-%define rel	2
+%define svn	20090123
+%define rel	1
 %define release %mkrel 1.%{svn}.%{rel}
 %define distname %{rname}-%{version}-%{svn}
 
