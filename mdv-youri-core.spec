@@ -58,4 +58,7 @@ rm -rf %{buildroot}
 %files 
 %defattr(-,root,root)
 %doc ChangeLog README
+%if %mdvver > 200900
+%{_mandir}/*/*
+%endif
 %{_datadir}/%{name}/lib/Youri
