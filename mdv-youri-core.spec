@@ -16,21 +16,21 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Source:		%{distname}.tar.bz2
 Url:		http://youri.zarb.org
 Requires:	perl-YAML
-BuildRequires:	perl(Test::Distribution)
-BuildRequires:	perl(Pod::Simple::HTMLBatch)
-BuildRequires:	perl(DateTime::Format::Duration)
-BuildRequires:  perl(CGI)
-BuildRequires:  perl(XML::RSS)
-BuildRequires:  perl(List::MoreUtils)
-BuildRequires:  perl(LWP::UserAgent)
-BuildRequires:  perl(SOAP::Lite)
-BuildRequires:  perl(MIME::Entity)
-BuildRequires:  perl(URPM)
-BuildRequires:  perl(DBI)
-BuildRequires:  perl(YAML)
-BuildRequires:  perl(XML::Twig)
-BuildRequires:  perl(Expect)
-BuildRequires:  perl(AppConfig)
+Requires:	perl(Test::Distribution)
+Requires:	perl(Pod::Simple::HTMLBatch)
+Requires:	perl(DateTime::Format::Duration)
+Requires:  perl(CGI)
+Requires:  perl(XML::RSS)
+Requires:  perl(List::MoreUtils)
+Requires:  perl(LWP::UserAgent)
+Requires:  perl(SOAP::Lite)
+Requires:  perl(MIME::Entity)
+Requires:  perl(URPM)
+Requires:  perl(DBI)
+Requires:  perl(YAML)
+Requires:  perl(XML::Twig)
+Requires:  perl(Expect)
+Requires:  perl(AppConfig)
 Buildarch:	noarch
 
 %description
