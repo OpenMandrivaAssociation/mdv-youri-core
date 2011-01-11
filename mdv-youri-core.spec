@@ -2,7 +2,7 @@
 %define name	mdv-%{rname}
 %define version 0.9
 %define svn	20090417
-%define rel	3
+%define rel	4
 %define release %mkrel 1.%{svn}.%{rel}
 %define distname %{rname}-%{version}-%{svn}
 
@@ -13,7 +13,8 @@ Summary:	Youri Offers an Upload & Repository Infrastucture (Mandriva fork)
 License:	GPL or Artistic
 Group:		Development/Other
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
-Source:		%{distname}.tar.bz2
+Source0:	%{distname}.tar.bz2
+Patch0:		youri-core-0.9-20090417-rpm5-port.patch
 Url:		http://youri.zarb.org
 Requires:	perl-YAML
 Requires:	perl(Test::Distribution)
@@ -41,6 +42,7 @@ This package contains YOURI core components used by the Mandriva build system.
 
 %prep
 %setup -q -n %{distname}
+%patch0 -p1 -b .rpm5~
 
 %build
 %{__perl} Makefile.PL \
