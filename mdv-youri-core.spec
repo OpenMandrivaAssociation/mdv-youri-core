@@ -53,6 +53,7 @@ This package contains YOURI core components used by the Mandriva build system.
 %install
 rm -rf %{buildroot}
 %make DESTDIR=%{buildroot} pure_install
+rm -f %{buildroot}%{_mandir}/man3/Youri::Package{,::RPM}.3pm*
 
 %clean 
 rm -rf %{buildroot}
