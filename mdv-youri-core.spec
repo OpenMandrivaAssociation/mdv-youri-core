@@ -2,7 +2,7 @@
 %define name	mdv-%{rname}
 %define version 0.9
 %define svn	20090417
-%define rel	4
+%define rel	5
 %define release %mkrel 1.%{svn}.%{rel}
 %define distname %{rname}-%{version}-%{svn}
 
@@ -53,7 +53,7 @@ This package contains YOURI core components used by the Mandriva build system.
 %install
 rm -rf %{buildroot}
 %make DESTDIR=%{buildroot} pure_install
-rm -f %{buildroot}%{_mandir}/man3/Youri::Package{,::RPM}.3pm*
+rm -f %{buildroot}%{_mandir}/man3/*
 
 %clean 
 rm -rf %{buildroot}
