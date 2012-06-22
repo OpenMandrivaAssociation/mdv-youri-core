@@ -1,9 +1,9 @@
 %define rname	youri-core
 %define name	mdv-%{rname}
 %define version 0.9
-%define svn	20090417
-%define rel	5
-%define release %mkrel 1.%{svn}.%{rel}
+%define svn	20120622
+%define rel	1
+%define release 1
 %define distname %{rname}-%{version}-%{svn}
 
 Name:		%{name}
@@ -14,7 +14,7 @@ License:	GPL or Artistic
 Group:		Development/Other
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Source0:	%{distname}.tar.bz2
-Patch0:		youri-core-0.9-20090417-rpm5-port.patch
+#Patch0:		youri-core-0.9-20090417-rpm5-port.patch
 Url:		http://youri.zarb.org
 Requires:	perl-YAML
 Requires:	perl(Test::Distribution)
@@ -55,13 +55,8 @@ rm -rf %{buildroot}
 %make DESTDIR=%{buildroot} pure_install
 rm -f %{buildroot}%{_mandir}/man3/*
 
-%clean 
-rm -rf %{buildroot}
-
 %files 
 %defattr(-,root,root)
 %doc ChangeLog README
-%if %mdvver > 200900
 %{_mandir}/*/*
-%endif
 %{_datadir}/%{name}/lib/Youri
