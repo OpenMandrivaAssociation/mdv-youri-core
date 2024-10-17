@@ -15,7 +15,7 @@ Group:		Development/Other
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Source0:	%{distname}.tar.bz2
 #Patch0:		youri-core-0.9-20090417-rpm5-port.patch
-Url:		http://youri.zarb.org
+Url:		https://youri.zarb.org
 Requires:	perl-YAML
 Requires:	perl(Test::Distribution)
 Requires:	perl(Pod::Simple::HTMLBatch)
