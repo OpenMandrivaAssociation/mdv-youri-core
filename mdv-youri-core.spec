@@ -34,6 +34,7 @@ Requires:  perl(Expect)
 Requires:  perl(AppConfig)
 Buildarch:	noarch
 
+BuildRequires:	make
 %description
 YOURI stands for "Youri Offers an Upload & Repository Infrastucture". It aims
 to build tools making management of a coherent set of packages easier.
